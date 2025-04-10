@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria Sub Portfolio Flexbox and Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Grid Layout */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    
+    .grid-item {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Flexbox Layout */
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #e0e0e0;
+      padding: 20px;
+    }
+    
+    .flex-item {
+      background-color: #c0c0c0;
+      padding: 10px 20px;
+      margin: 10px;
+    }
+    html {
+  scroll-behavior: smooth;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">My Portfolio</div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">&#9776;</div>
+        </nav>
+      </header>
+    <main><section class="content">
+      <h1>Welcome to My Web Development</h1>
+      <p>Showcases my work and skills in web development.</p>
+    </section>
+</main> 
+<section id="home">
+    <div class="home-container">
+      <h1>Home</h1>
+      <p>"Welcome to my digital playground! Here, creativity meets code to bring ideas to life. Dive into a showcase of my journey as a web developer, where each project reflects my passion for blending design with functionality. Together, we can create something remarkable."</p>
+    </div>
+</section>  
+<section id="about">
+    <div class="about-container">
+      <h1>About Me</h1>
+      <p>"With a passion for coding and a knack for creativity, I aim to transform ideas into reality. Every project tells a story of curiosity and dedication to learning."</p>
+      <p>"My journey involves mastering web technologies like HTML, CSS, JavaScript, and SQL while exploring creative ways to enhance user experience. I'm always pushing boundaries."</p>
+    </div>
+  </section>
+  <section id="project">
+    <div class="project-container">
+      <h1>Projects</h1>
+      <p>"Every project showcases my growth and commitment to bridging the gap between technical expertise and aesthetic design. From interactive websites to data-driven applications, each creation is a testament to innovation."</p>
+      <p>"Dive into my featured projects, where you'll find practical solutions, creative enhancements, and responsive designs crafted to cater to users across devices."</p>
+    </div>
+  </section>
+  <section id="Skills">
+    <div class="skills-container">
+      <h1>Skills</h1>
+      <p>"My skill set is a blend of technical prowess and creative flair. Proficient in HTML, CSS, JavaScript, and SQL, I thrive on challenges that require innovative solutions."</p>
+      <p>"I’m constantly learning and adapting to new technologies, ensuring my skills remain relevant in the ever-evolving web landscape."</p>
+    </div>
+  </section>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h3>Project 1: Responsive Design</h3>
+      <p>Built a fully responsive webpage using Flexbox and Grid principles.</p>
+      <a href="https://github.com/PLP-WebTechnologies/feb-2025-css-layouts-and-responsive-design-VictoriaVquay.git" class="button">View Demo</a>
+    </div>
+    <div class="grid-item">
+      <h3>Project 2: Data Visualization</h3>
+      <p>Interactive charts and graphs created with JavaScript libraries.</p>
+      <a href="https://github.com/VictoriaVquay/PortfolioV.git" class="button">View Demo</a>
+    </div>
+    <div class="grid-item">
+      <h3>Project 3: Portfolio Website</h3>
+      <p>Designed and developed a portfolio with animations and responsiveness.</p>
+      <a href="https://lovable.dev/projects/74665e73-e7f7-4aff-b00c-e83d42dfb3f5" class="button">View Demo</a>
+    </div>
+    <div class="grid-item">
+      <h3>Project 4: E-commerce</h3>
+      <p>Developed an e-commerce site with user authentication and shopping cart functionality.</p>
+      <a href="https://github.com/VictoriaVquay/project1.git" class="button">View Demo</a>
+    </div>
+    <div class="grid-item">
+      <h3>Project 5: Blogging Platform</h3>
+      <p>Created a blogging platform with user-generated content and commenting system.</p>
+      <a href="https://readdy.site/share/0a8b8eed4b36493fe45dacd0b94d0cf8" class="button">View Demo</a>
+    </div>
+    
+    <!-- About Section -->
+<section id="about" class="flex-container">
+  <div class="about-text flex-card">
+    <h1>More</h1>
+    <p>I’m a creative web developer passionate about blending design with interactivity.</p>
+  </div>
+  <div class="about-image">
+    <img src="Vkii.jpg" alt="Victoria">
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="flex-container">
+    <h1>Skills</h1>
+  <div class="skill flex-card">
+    <h2>HTML & CSS</h2>
+    <p>Proficient in creating responsive layouts and designs.</p>
+  </div>
+  <div class="skill flex-card">
+    <h2>JavaScript</h2>
+    <p>Experienced in building interactive web applications.</p>
+  </div>
+  <div class="skill flex-card">
+    <h2>SQL</h2>
+    <p>Skilled in database management and data retrieval.</p>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="flex-container">
+  <div class="project flex-card">
+    <h2>Responsive Web Design</h2>
+    <p>Developed a sleek and modern website using Flexbox & Grid.</p>
+  </div>
+  <div class="project flex-card">
+    <h2>Database Management</h2>
+    <p>Optimized SQL queries for enhanced data retrieval efficiency.</p>
+  </div>
+</section>
+<section id="contact"></section>
+      <h1>Contact Me</h1>
+      <p>"Let’s connect! I’m always excited to collaborate on new ideas, solve challenging problems, or discuss opportunities. Whether you have a project in mind or need guidance, I’m here."</p>
+      <p>"Feel free to reach out through the form below or connect with me on social platforms. Let’s bring your vision to life!"</p>
+    </div>
+    </section>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Your Name">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Your Email">
+  
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+  
+    <button type="submit">Send</button>
+  </form>
+  <script></script>
+</body>
+</html>
